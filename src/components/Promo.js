@@ -2,7 +2,7 @@ import bike from "../asserts/first-bike-2.png";
 
 function Promo() {
   return (
-    <section className="relative px-[15px] mx-0  sm:mx-[9.6px] pt-[40px] sm:pt-[78px] mb-[72px]">
+    <section className="relative px-[15px] mx-0 sm:mx-[9.6px] pt-[40px] sm:pt-[78px] mb-[72px]">
       <div className="absolute top-[-78px] left-[50%] translate-x-[-50%] hidden lg:block lg:text-[150px] xl:text-[180px] 2xl:text-[210px] font-bold leading-normal tracking-[-16.8px] uppercase opacity-[0.07999999821186066] bg-gradient-to-b from-white to-transparent bg-clip-text text-transparent  ">
         Мотошкола
       </div>

@@ -5,7 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-
       backgroundImage: {
         'gradient-moto': 'linear-gradient(180deg, rgba(32, 32, 32, 0.00) 0%, #202020 100%)',
         'promo-motorcycle': "url('/src/asserts/first-bike.png')",
