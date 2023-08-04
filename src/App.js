@@ -1,3 +1,4 @@
+import AboutBikes from "./components/AboutBikes";
 import AboutStudying from "./components/AboutStudying";
 import CustomerContacts from "./components/CustomerContacts";
 import Header from "./components/Header";
@@ -14,6 +15,7 @@ function App() {
         <AboutStudying />
         <Instructor />
         <CustomerContacts />
+        <AboutBikes />
       </main>
     </div>
   );
