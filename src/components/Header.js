@@ -1,4 +1,4 @@
-import logo from '../asserts/logo.svg';
+import logo from "../asserts/logo.svg";
 
 function Header() {
   return (
@@ -9,7 +9,12 @@ function Header() {
         </div>
 
         <div className="flex gap-3 items-center">
-          <a href="https://www.instagram.com/rsmoto.com.ua/" rel="noreferrer" target="_blank" className="cursor-pointer">
+          <a
+            href="https://www.instagram.com/rsmoto.com.ua/"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer rounded-xl border border-transparent border-solid hover:border-white transition-colors ease-in-out"
+          >
             <svg
               width="48"
               height="48"
@@ -49,7 +54,12 @@ function Header() {
             </svg>
           </a>
 
-          <a href="https://www.youtube.com/@user-qf2tk2ni8o" rel="noreferrer" target="_blank" className="cursor-pointer">
+          <a
+            href="https://www.youtube.com/@user-qf2tk2ni8o"
+            rel="noreferrer"
+            target="_blank"
+            className="cursor-pointer rounded-xl border border-transparent border-solid hover:border-white transition-colors ease-in-out"
+          >
             <svg
               width="48"
               height="48"
