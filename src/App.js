@@ -5,7 +5,7 @@ import Gifts from "./components/Gifts";
 import Header from "./components/Header";
 import Instructor from "./components/Instructor";
 import Promo from "./components/Promo";
-
+import Application from './components/Application';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <CustomerContacts />
         <AboutBikes />
         <Gifts />
+        <Application />
       </main>
     </div>
   );
