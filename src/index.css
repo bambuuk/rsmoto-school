@@ -7,4 +7,15 @@
   body {
     @apply bg-[#202020] font-[Montserrat];
   }
+  button {
+    transition: all 0.5s;
+  }
+  button:hover {
+    transition: all 0.5s;
+    box-shadow: rgba(209, 68, 3, 0.897) 0px 4px 16px, rgba(209, 68, 3, 0.897) 0px 8px 24px, rgba(209, 68, 3, 0.897) 0px 16px 56px;
+  }
+  button:active {
+    transform: scale(.9);
+  }
 }
+
