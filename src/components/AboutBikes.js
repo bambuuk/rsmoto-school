@@ -30,7 +30,7 @@ function AboutBikes() {
         <div className="my-[37px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
         <div className="w-full">
           <iframe
-            className="w-full min-h-[250px] sm:min-h-[450px] md:min-h-[550px]"
+            className="w-full min-h-[250px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[709px]"
             src="https://www.youtube.com/embed/aQ9-LFx8slw"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
