@@ -18,6 +18,9 @@ module.exports = {
       textFillColor: {
         'transparent': 'transparent',
       },
+      color: {
+        'modalBg': 'rgb(0, 0, 0)'
+      }
     },
   },
   plugins: [],

@@ -1,4 +1,6 @@
+
 function CustomerContacts() {
+
   return (
     <section className="bg-contacts-motorcycle bg-[lightgray] bg-no-repeat bg-cover bg-[50%]">
       <div className="px-[15px] mx-0 sm:mx-[9.6px] pt-[87px] pb-[63px] flex flex-col items-center">
