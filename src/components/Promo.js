@@ -1,21 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import CertificateModal from "./CertificateModal";
 import bike from "../asserts/first-bike-2.png";
 
 function Promo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [scroll, setScroll] = useState('0px');
+
+  function calcScroll() {
+    let div = document.createElement('div');
+
+    div.style.width = '50px';
+    div.style.height = '50px';
+    div.style.overflowY = 'scroll';
+    div.style.visibility = 'hidden';
+
+    document.body.append(div);
+    let scrollWidth = div.offsetWidth - div.clientWidth;
+    div.remove();
+
+    return scrollWidth;
+  }
 
   const handleOpenModal = (e) => {
     e.stopPropagation()
     setIsModalOpen(true);
+    
     document.body.classList.add('no-scroll');
+    document.body.style.marginRight = `${scroll}px`;
   };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    
     document.body.classList.remove('no-scroll');
+    document.body.style.marginRight = '0px';
   };
+
+  useEffect(() => {
+    setScroll(calcScroll());
+  }, []);
 
   return (
     <section onClick={handleCloseModal} className="relative px-[15px] mx-0 sm:mx-[9.6px] pt-[40px] sm:pt-[78px] mb-[72px] transition-all">
