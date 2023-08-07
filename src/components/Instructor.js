@@ -6,7 +6,7 @@ function Instructor() {
       <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center relative lg:mt-[151px] lg:mb-[129px]">
         <div
           data-aos="fade-right"
-          data-aos-delay="200"
+          data-aos-delay="400"
           data-aos-once="true"
           className="z-20 relative flex flex-col items-center lg:items-start text-center lg:text-start"
         >
