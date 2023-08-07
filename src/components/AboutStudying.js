@@ -3,17 +3,19 @@ function AboutStudying() {
     <section className="bg-[#2C2C2C]">
       <div className="px-[15px] mx-0 sm:mx-[9.6px] pt-[73px] pb-[163px]">
         <div className="flex flex-col items-center">
-          <h2 className="text-[#fff] text-base sm:text-[36px] md:text-[40px] font-bold leading-normal tracking-[1.6px] uppercase max-w-[816px] text-center">
-            НОВИЙ РІВЕНЬ навчання, сервісу та результатів.
-          </h2>
-          <div className="mt-[19px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
-          <div className="mt-12 max-w-[586px] text-[#C1C1C1] text-center text-sm sm:text-base font-normal">
-            Мотошкола класу PREMIUM для справжніх поціновувачів високоякісного
-            сервісу, індивідуального підходу та легендарних мотоциклів Harley
-            Davidson.
+          <div data-aos="fade-down" data-aos-delay="100" data-aos-once="true" className="flex flex-col items-center">
+            <h2 className="text-[#fff] text-base sm:text-[36px] md:text-[40px] font-bold leading-normal tracking-[1.6px] uppercase max-w-[816px] text-center">
+              НОВИЙ РІВЕНЬ навчання, сервісу та результатів.
+            </h2>
+            <div className="mt-[19px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
+            <div className="mt-12 max-w-[586px] text-[#C1C1C1] text-center text-sm sm:text-base font-normal">
+              Мотошкола класу PREMIUM для справжніх поціновувачів високоякісного
+              сервісу, індивідуального підходу та легендарних мотоциклів Harley
+              Davidson.
+            </div>
           </div>
           <div className="flex justify-center gap-[87px] mt-[73px] flex-wrap">
-            <div className="max-w-[253px] flex flex-col">
+            <div data-aos="fade-down" data-aos-delay="100" data-aos-once="true" className="max-w-[253px] flex flex-col">
               <div className="flex flex-auto justify-center md:justify-start">
                 <svg
                   width="44"
@@ -44,7 +46,7 @@ function AboutStudying() {
               </p>
             </div>
 
-            <div className="max-w-[253px] flex flex-col">
+            <div data-aos="fade-down" data-aos-delay="300" data-aos-once="true" className="max-w-[253px] flex flex-col">
               <div className="flex flex-auto justify-center md:justify-start">
                 <svg
                   width="62"
@@ -85,7 +87,7 @@ function AboutStudying() {
               </p>
             </div>
 
-            <div className="max-w-[253px] flex flex-col">
+            <div data-aos="fade-down" data-aos-delay="500" data-aos-once="true" className="max-w-[253px] flex flex-col">
               <div className="flex flex-auto justify-center md:justify-start">
                 <svg
                   width="116"
@@ -186,7 +188,7 @@ function AboutStudying() {
               </p>
             </div>
 
-            <div className="max-w-[253px] flex flex-col">
+            <div data-aos="fade-down" data-aos-delay="700" data-aos-once="true" className="max-w-[253px] flex flex-col">
               <div className="flex flex-auto justify-center md:justify-start">
                 <svg
                   width="57"
