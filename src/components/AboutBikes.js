@@ -28,6 +28,7 @@ function AboutBikes() {
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
           data-aos-duration="600"
+          data-aos-once="true" 
           className="relative"
         >
           <img

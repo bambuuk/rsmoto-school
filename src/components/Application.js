@@ -1,8 +1,15 @@
 function Application() {
   return (
     <section>
-      <div className="px-[15px] mx-0 sm:mx-[9.6px] pb-[132px] pt-[129px] md:pt-[229px] md:pb-[232px] flex flex-col items-center">
-        <h2 className="text-center sm:text-start text-[24px] sm:text-[34px] md:text-[40px] text-[#fff] font-bold leading-normal tracking-[1.6px] uppercase">ЗАЦІКАВИВ КУРС?</h2>
+      <div
+        data-aos="zoom-in-down"
+        data-aos-delay="400"
+        data-aos-once="true"
+        className="px-[15px] mx-0 sm:mx-[9.6px] pb-[132px] pt-[129px] md:pt-[229px] md:pb-[232px] flex flex-col items-center"
+      >
+        <h2 className="text-center sm:text-start text-[24px] sm:text-[34px] md:text-[40px] text-[#fff] font-bold leading-normal tracking-[1.6px] uppercase">
+          ЗАЦІКАВИВ КУРС?
+        </h2>
         <div className="my-[28px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
         <div className="max-w-[385px] text-center text-[#C1C1C1] text-base font-normal">
           Залишай заявку та наш менеджер зв’яжеться з тобою найближчим часом
