@@ -11,6 +11,7 @@ import Application from "./components/Application";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import 'animate.css';
 
 function App() {
   useEffect(() => {

@@ -4,19 +4,32 @@ function AboutBikes() {
   return (
     <section>
       <div className="px-[15px] mx-0 sm:mx-[9.6px] pt-[110px] pb-[192.44px] flex flex-col items-center">
-        <h2 className="max-w-[600px] text-center text-white text-[18px] sm:text-[40px] font-bold leading-normal tracking-[1.6px] uppercase">
-          Байк Harley Davidson sportster 1200
-        </h2>
-        <div className="my-[37px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
-        <p className="max-w-[505px] text-center text-[#C1C1C1] text-sm sm:text-base font-normal">
-          Швидкий та потужний представник двохколісних – <br />{" "}
-          <strong>Harley Davidson Sportster 1200.</strong>
-          <br />
-          <br />
-          Байк, що чудово підходить для навчання та дозволяє отримати максимум
-          задоволення від керування.
-        </p>
-        <div className="relative">
+        <div
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-once="true"
+          className="flex flex-col items-center"
+        >
+          <h2 className="max-w-[600px] text-center text-white text-[18px] sm:text-[40px] font-bold leading-normal tracking-[1.6px] uppercase">
+            Байк Harley Davidson sportster 1200
+          </h2>
+          <div className="my-[37px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
+          <p className="max-w-[505px] text-center text-[#C1C1C1] text-sm sm:text-base font-normal">
+            Швидкий та потужний представник двохколісних – <br />{" "}
+            <strong>Harley Davidson Sportster 1200.</strong>
+            <br />
+            <br />
+            Байк, що чудово підходить для навчання та дозволяє отримати максимум
+            задоволення від керування.
+          </p>
+        </div>
+        <div
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="600"
+          className="relative"
+        >
           <img
             className="z-10"
             src={motorbike}
