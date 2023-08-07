@@ -3,7 +3,8 @@ import ModalWindow from "./ModalWindow";
 import bike from "../asserts/first-bike-2.png";
 
 function Promo() {
-  const { handleCloseModal, handleOpenModal, isModalOpen, modalText } = useModalWindow();
+  const { handleCloseModal, handleOpenModal, isModalOpen, modalText } =
+    useModalWindow();
 
   return (
     <section
@@ -39,7 +40,12 @@ function Promo() {
           </button>
         </div>
       </div>
-      <div className='flex relative w-full z-[-1] lg:translate-y-[-10%] mt-5 lg:mt-0 after:content-[""] after:absolute after:w-full after:h-[40%] after:bg-gradient-moto after:bottom-[0] after:left-0'>
+      <div
+        data-aos="fade-right"
+        data-aos-delay="600"
+        data-aos-once="true"
+        className='flex relative w-full z-[-1] lg:translate-y-[-10%] mt-5 lg:mt-0 after:content-[""] after:absolute after:w-full after:h-[40%] after:bg-gradient-moto after:bottom-[0] after:left-0'
+      >
         <img className="w-full h-full object-cover" src={bike} alt="bike" />
       </div>
       <ModalWindow

@@ -4,11 +4,16 @@ function Header() {
   return (
     <div>
       <header className="py-10 flex justify-between px-[15px] mx-[9.6px]">
-        <div className="w-[50%] md:w-full h-full object-cover">
+        <div
+          data-aos="fade-down-right"
+          data-aos-delay='300'
+          data-aos-once="true" 
+          className="w-[50%] md:w-full h-full object-cover"
+        >
           <img src={logo} alt="" />
         </div>
 
-        <div className="flex gap-3 items-center">
+        <div data-aos="fade-down-left" data-aos-delay='300' data-aos-once="true" className="flex gap-3 items-center">
           <a
             href="https://www.instagram.com/rsmoto.com.ua/"
             rel="noreferrer"

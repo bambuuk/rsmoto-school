@@ -24,7 +24,7 @@ function Gifts() {
             </button>
           </div>
         </div>
-        <div className="max-w-[756px]">
+        <div data-aos="fade-right" className="max-w-[756px]">
           <img className="w-full h-full object-cover" src={gift} alt="" />
         </div>
       </div>
