@@ -6,7 +6,7 @@ function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
       <div
         className={
           isModalOpen
-            ? "fixed w-full h-full top-0 left-0 z-20 opacity-40 bg-black transition-all"
+            ? "fixed w-full h-full top-0 left-0 z-20 opacity-40 bg-black"
             : ""
         }
       ></div>
