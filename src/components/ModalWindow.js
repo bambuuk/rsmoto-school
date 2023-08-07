@@ -1,6 +1,6 @@
 import { MdClose } from "react-icons/md";
 
-function CertificateModal({ isModalOpen, handleCloseModal }) {
+function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
   return (
     <>
       <div
@@ -29,7 +29,7 @@ function CertificateModal({ isModalOpen, handleCloseModal }) {
             />
           </div>
           <h2 className="text-center text-[24px] sm:text-[34px] md:text-[40px] text-[#fff] font-bold leading-normal tracking-[1.6px] uppercase">
-            МАЄШ СЕРТИФІКАТ?
+            {modalText}
           </h2>
           <div className="my-[28px] w-[80px] h-[4px] mx-auto rounded-sm bg-[#EB601D]"></div>
           <div className="mt-[98px] w-full">
@@ -62,4 +62,4 @@ function CertificateModal({ isModalOpen, handleCloseModal }) {
   );
 }
 
-export default CertificateModal;
+export default ModalWindow;

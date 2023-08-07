@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
-import CertificateModal from "./CertificateModal";
+import ModalWindow from "./ModalWindow";
 import bike from "../asserts/first-bike-2.png";
 
 function Promo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [scroll, setScroll] = useState('0px');
+  const [modalText, setModalText] = useState('');
 
   function calcScroll() {
     let div = document.createElement('div');
@@ -22,9 +23,10 @@ function Promo() {
     return scrollWidth;
   }
 
-  const handleOpenModal = (e) => {
+  const handleOpenModal = (e, text) => {
     e.stopPropagation()
     setIsModalOpen(true);
+    setModalText(text);
     
     document.body.classList.add('no-scroll');
     document.body.style.marginRight = `${scroll}px`;
@@ -32,7 +34,8 @@ function Promo() {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
-    
+    setModalText('');
+
     document.body.classList.remove('no-scroll');
     document.body.style.marginRight = '0px';
   };
@@ -61,7 +64,7 @@ function Promo() {
           <button className="px-[39px] py-[21px] rounded-xl bg-[#EB601D] text-sm sm:text-base font-medium uppercase leading-normal">
             залишити заявку
           </button>
-          <button onClick={handleOpenModal} className="px-[39px] py-[21px] bg-black bg-opacity-50 border border-solid border-[#fff] rounded-xl text-[#fff] text-sm sm:text-base font-medium uppercase leading-normal">
+          <button onClick={e => handleOpenModal(e, 'МАЄШ СЕРТИФІКАТ?')} className="px-[39px] py-[21px] bg-black bg-opacity-50 border border-solid border-[#fff] rounded-xl text-[#fff] text-sm sm:text-base font-medium uppercase leading-normal">
             У мене є сертифікат
           </button>
         </div>
@@ -69,7 +72,7 @@ function Promo() {
       <div className='flex relative w-full z-[-1] lg:translate-y-[-10%] mt-5 lg:mt-0 after:content-[""] after:absolute after:w-full after:h-[40%] after:bg-gradient-moto after:bottom-[0] after:left-0'>
         <img className="w-full h-full object-cover" src={bike} alt="bike" />
       </div>
-      <CertificateModal handleCloseModal={handleCloseModal} isModalOpen={isModalOpen} />
+      <ModalWindow handleCloseModal={handleCloseModal} isModalOpen={isModalOpen} modalText={modalText} />
     </section>
   );
 }
