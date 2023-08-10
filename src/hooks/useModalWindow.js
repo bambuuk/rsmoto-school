@@ -53,7 +53,6 @@ function useModalWindow() {
 
       setTimeout(() => {
         handleCloseModal();
-        setIsSubmitted(false);
       }, 3000);
     }
   };

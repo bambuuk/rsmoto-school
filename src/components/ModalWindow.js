@@ -51,7 +51,7 @@ function ModalWindow({
           </h2>
           <div className="my-[20px] sm:my-[28px] w-[80px] h-[4px] mx-auto rounded-sm bg-[#EB601D]"></div>
           <div className="mt-0 xl:mt-[98px] w-full">
-            <form action="" onSubmit={onSubmit}>
+            <form onSubmit={onSubmit}>
               <div className="flex flex-col items-center xl:flex-row xl:justify-around flex-wrap gap-4 xl:gap-0">
                 <input
                   required
