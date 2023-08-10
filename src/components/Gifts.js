@@ -4,8 +4,18 @@ import ModalWindow from "./ModalWindow";
 import gift from "../asserts/gift.png";
 
 function Gifts() {
-  const { handleCloseModal, handleOpenModal, isModalOpen, modalText } =
-    useModalWindow();
+  const {
+    handleCloseModal,
+    handleOpenModal,
+    isModalOpen,
+    modalText,
+    name,
+    setName,
+    phone,
+    setPhone,
+    email,
+    setEmail,
+  } = useModalWindow();
 
   return (
     <section onClick={handleCloseModal} className="bg-[#2C2C2C]">
@@ -46,6 +56,12 @@ function Gifts() {
         handleCloseModal={handleCloseModal}
         isModalOpen={isModalOpen}
         modalText={modalText}
+        name={name}
+        setName={setName}
+        phone={phone}
+        setPhone={setPhone}
+        email={email}
+        setEmail={setEmail}
       />
     </section>
   );

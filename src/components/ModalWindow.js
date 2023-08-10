@@ -1,7 +1,17 @@
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 
-function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
+function ModalWindow({
+  isModalOpen,
+  handleCloseModal,
+  modalText,
+  name,
+  setName,
+  phone,
+  setPhone,
+  email,
+  setEmail,
+}) {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubmit = (e) => {
@@ -24,7 +34,7 @@ function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
     <>
       <div
         className={
-          (isModalOpen && !isSubmitted)
+          isModalOpen && !isSubmitted
             ? "fixed w-full h-full top-0 left-0 z-20 opacity-40 bg-black"
             : ""
         }
@@ -38,7 +48,11 @@ function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
         }
       >
         <div
-          className={isSubmitted ? "opacity-0 invisible transition-all ease-out" : "w-full relative transition-all ease-in"}
+          className={
+            isSubmitted
+              ? "opacity-0 invisible transition-all ease-out"
+              : "w-full relative transition-all ease-in"
+          }
         >
           <div
             onClick={handleCloseModal}
@@ -58,12 +72,16 @@ function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
               <div className="flex flex-col items-center xl:flex-row xl:justify-around flex-wrap gap-4 xl:gap-0">
                 <input
                   required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   type="text"
                   placeholder="Ім'я"
                   className="max-w-[346px] w-full bg-transparent border-b rounded-bl-[1px] border-[#41454E] focus:border-[#EB601D] transition-colors ease-in-out pl-[7px] pr-[10px] py-[11px] outline-none text-white text-base sm:text-lg leading-normal font-medium tracking-[0.36px]"
                 />
                 <input
                   required
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   type="tel"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                   placeholder="Телефон"
@@ -71,24 +89,32 @@ function ModalWindow({ isModalOpen, handleCloseModal, modalText }) {
                 />
                 <input
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   type="email"
                   placeholder="E-mail"
                   className="max-w-[346px] w-full bg-transparent border-b rounded-bl-[1px] border-[#41454E] focus:border-[#EB601D] transition-colors pl-[7px] pr-[10px] py-[11px] outline-none text-white text-base sm:text-lg leading-normal font-medium tracking-[0.36px]"
                 />
               </div>
-              <button
-                className="block mt-[50px] mx-auto px-[39px] py-[21px] bg-[#EB601D] rounded-xl text-base text-[#fff] font-medium leading-normal uppercase"
-              >
+              <button className="block mt-[50px] mx-auto px-[39px] py-[21px] bg-[#EB601D] rounded-xl text-base text-[#fff] font-medium leading-normal uppercase">
                 залишити заявку
               </button>
             </form>
           </div>
         </div>
         <div
-          className={!isSubmitted ? "opacity-0 invisible w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-out" : "w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-in visible opacity-100"}
+          className={
+            !isSubmitted
+              ? "opacity-0 invisible w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-out"
+              : "w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-in visible opacity-100"
+          }
         >
-          <div className="text-4xl text-white text-center font-bold">Дякуємо!</div>
-          <div className="text-xl text-white text-center mt-6">Заявка успішно відправлена!</div>
+          <div className="text-4xl text-white text-center font-bold">
+            Дякуємо!
+          </div>
+          <div className="text-xl text-white text-center mt-6">
+            Заявка успішно відправлена!
+          </div>
         </div>
       </div>
     </>

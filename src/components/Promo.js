@@ -3,8 +3,18 @@ import ModalWindow from "./ModalWindow";
 import bike from "../asserts/first-bike-2.png";
 
 function Promo() {
-  const { handleCloseModal, handleOpenModal, isModalOpen, modalText } =
-    useModalWindow();
+  const {
+    handleCloseModal,
+    handleOpenModal,
+    isModalOpen,
+    modalText,
+    name,
+    setName,
+    phone,
+    setPhone,
+    email,
+    setEmail,
+  } = useModalWindow();
 
   return (
     <section
@@ -52,6 +62,12 @@ function Promo() {
         handleCloseModal={handleCloseModal}
         isModalOpen={isModalOpen}
         modalText={modalText}
+        name={name}
+        setName={setName}
+        phone={phone}
+        setPhone={setPhone}
+        email={email}
+        setEmail={setEmail}
       />
     </section>
   );
