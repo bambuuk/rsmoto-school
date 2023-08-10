@@ -11,7 +11,7 @@ import Application from "./components/Application";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import 'animate.css';
+import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
@@ -29,6 +29,7 @@ function App() {
         <Gifts />
         <Application />
       </main>
+      <Footer />
     </div>
   );
 }
