@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/rsmoto-school/static/css/main.b451a4e0.css",
+    "main.js": "/rsmoto-school/static/js/main.743516e9.js",
+    "static/media/first-bike-2.png": "/rsmoto-school/static/media/first-bike-2.ce2f4927d4ac115a8081.png",
+    "static/media/harley-davidson.png": "/rsmoto-school/static/media/harley-davidson.a1e3eb8609256a69351b.png",
+    "static/media/instructor-big.png": "/rsmoto-school/static/media/instructor-big.df84703e91c466bdc6d6.png",
+    "static/media/contacts-bg-motorcycle.png": "/rsmoto-school/static/media/contacts-bg-motorcycle.19bd16e8cee6387b9b48.png",
+    "static/media/gift.png": "/rsmoto-school/static/media/gift.5bac975cd3ef9192cce4.png",
+    "static/media/logo.svg": "/rsmoto-school/static/media/logo.76ab6fe73bc557af49aa39fa1c44c5ba.svg",
+    "index.html": "/rsmoto-school/index.html",
+    "main.b451a4e0.css.map": "/rsmoto-school/static/css/main.b451a4e0.css.map",
+    "main.743516e9.js.map": "/rsmoto-school/static/js/main.743516e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b451a4e0.css",
+    "static/js/main.743516e9.js"
+  ]
+}
