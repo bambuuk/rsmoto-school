@@ -13,7 +13,7 @@ function ApplicationForm({ headerText }) {
   } = useApplicationForm();
 
   return (
-    <>
+    <div className="w-full relative">
       <div
         className={
           isSubmitted
@@ -66,8 +66,8 @@ function ApplicationForm({ headerText }) {
       <div
         className={
           !isSubmitted
-            ? "opacity-0 invisible w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-out"
-            : "w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-in visible opacity-100"
+            ? "z-40 opacity-0 invisible w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-out"
+            : "z-40 w-full absolute top-[50%] translate-y-[-50%] left-0 flex justify-center items-center flex-col transition-all ease-in visible opacity-100"
         }
       >
         <div className="text-4xl text-white text-center font-bold">
@@ -77,7 +77,7 @@ function ApplicationForm({ headerText }) {
           Заявка успішно відправлена!
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
