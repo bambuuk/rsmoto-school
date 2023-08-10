@@ -14,6 +14,8 @@ function Promo() {
     setPhone,
     email,
     setEmail,
+    onSubmit,
+    isSubmitted
   } = useModalWindow();
 
   return (
@@ -68,6 +70,8 @@ function Promo() {
         setPhone={setPhone}
         email={email}
         setEmail={setEmail}
+        onSubmit={onSubmit}
+        isSubmitted={isSubmitted}
       />
     </section>
   );

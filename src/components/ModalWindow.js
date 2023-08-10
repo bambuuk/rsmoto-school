@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { MdClose } from "react-icons/md";
 
 function ModalWindow({
@@ -11,25 +10,9 @@ function ModalWindow({
   setPhone,
   email,
   setEmail,
+  onSubmit,
+  isSubmitted
 }) {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const onSubmit = (e) => {
-    e.preventDefault();
-
-    if (isSubmitted === false) {
-      setIsSubmitted(true);
-
-      setTimeout(() => {
-        handleCloseModal();
-      }, 3000);
-
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 3500);
-    }
-  };
-
   return (
     <>
       <div

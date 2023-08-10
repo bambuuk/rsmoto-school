@@ -15,6 +15,8 @@ function Gifts() {
     setPhone,
     email,
     setEmail,
+    onSubmit,
+    isSubmitted
   } = useModalWindow();
 
   return (
@@ -62,6 +64,8 @@ function Gifts() {
         setPhone={setPhone}
         email={email}
         setEmail={setEmail}
+        onSubmit={onSubmit}
+        isSubmitted={isSubmitted}
       />
     </section>
   );

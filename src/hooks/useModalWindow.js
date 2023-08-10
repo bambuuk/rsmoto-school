@@ -7,6 +7,7 @@ function useModalWindow() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   function calcScroll() {
     let div = document.createElement("div");
@@ -38,9 +39,23 @@ function useModalWindow() {
     setName('');
     setPhone('');
     setEmail('');
+    setIsSubmitted(false);
 
     document.body.classList.remove("no-scroll");
     document.body.style.marginRight = "0px";
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    if (isSubmitted === false) {
+      setIsSubmitted(true);
+
+      setTimeout(() => {
+        handleCloseModal();
+        setIsSubmitted(false);
+      }, 3000);
+    }
   };
 
   useEffect(() => {
@@ -58,6 +73,8 @@ function useModalWindow() {
     setPhone,
     email,
     setEmail,
+    onSubmit,
+    isSubmitted
   };
 }
 
