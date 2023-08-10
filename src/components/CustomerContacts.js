@@ -8,7 +8,7 @@ function CustomerContacts() {
         className="px-[15px] mx-0 sm:mx-[9.6px] pt-[87px] pb-[63px] flex flex-col items-center"
       >
         <h2 className="text-center sm:text-start text-[24px] sm:text-[34px] md:text-[40px] text-[#fff] font-bold leading-normal tracking-[1.6px] uppercase">
-          Бажаеш опанувати байк?
+          Бажаєш опанувати байк?
         </h2>
         <div className="mt-[28px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
         <div className="mt-[28px] max-w-[400px] text-center text-[#C1C1C1] text-base font-normal">
