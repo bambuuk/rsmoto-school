@@ -1,9 +1,9 @@
-import instructor from "../asserts/instructor-big.png";
+import instructor from "../asserts/instructor.png";
 
 function Instructor() {
   return (
     <section className="px-[15px] mx-0 sm:mx-[9.6px] pb-[123px] pt-[156px]">
-      <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center relative lg:mt-[151px] lg:mb-[129px]">
+      <div className="flex flex-col lg:flex-row justify-center items-center relative lg:mt-[151px] lg:mb-[129px]">
         <div
           data-aos="fade-right"
           data-aos-delay="400"
@@ -30,11 +30,11 @@ function Instructor() {
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-once="true"
-          className='relative lg:absolute lg:left-[30%] mt-14 lg:mt-0 after:content-[""] after:absolute after:w-full after:h-[60%] after:bg-gradient-moto after:bottom-[0] after:left-0 '
+          className='relative mt-14 lg:mt-0 after:content-[""] after:absolute after:w-full after:h-[60%] after:bg-gradient-moto after:bottom-[0] after:left-0 '
         >
           <div className='relative after:content-[""] after:absolute after:w-[40%] after:h-full after:bg-gradient-moto-vertical after:top-0 after:right-0'>
             <img src={instructor} alt="Instructor" />
-            <div className=" z-[-1] absolute top-[15%] sm:top-[10%] left-[25%] w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[250px] lg:h-[250px] xl:w-[350px] xl:h-[350px] rounded-full bg-[#EB601D] blur-[15px] sm:blur-[60px] md:blur-[80px] lg:blur-[70px] xl:blur-[100px]"></div>
+            <div className=" z-[-1] absolute top-[15%] sm:top-[10%] left-[16%] w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[250px] lg:h-[250px] xl:w-[350px] xl:h-[350px] rounded-full bg-[#EB601D] blur-[15px] sm:blur-[60px] md:blur-[80px] lg:blur-[70px] xl:blur-[100px]"></div>
           </div>
         </div>
       </div>
