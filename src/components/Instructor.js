@@ -34,7 +34,7 @@ function Instructor() {
         >
           <div className='relative after:content-[""] after:absolute after:w-[40%] after:h-full after:bg-gradient-moto-vertical after:top-0 after:right-0'>
             <img src={instructor} alt="Instructor" />
-            <div className=" z-[-1] absolute top-[15%] sm:top-[10%] left-[16%] w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[250px] lg:h-[250px] xl:w-[350px] xl:h-[350px] rounded-full bg-[#EB601D] blur-[15px] sm:blur-[60px] md:blur-[80px] lg:blur-[70px] xl:blur-[100px]"></div>
+            <div className=" z-[-1] absolute top-[15%] sm:top-[10%] left-[16%] w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[250px] lg:h-[250px] xl:w-[300px] xl:h-[300px] rounded-full bg-[#EB601D] blur-[15px] sm:blur-[60px] md:blur-[80px] lg:blur-[70px] xl:blur-[100px]"></div>
           </div>
         </div>
       </div>
