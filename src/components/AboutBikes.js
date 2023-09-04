@@ -3,7 +3,7 @@ import motorbike from "../asserts/harley-davidson.png";
 function AboutBikes() {
   return (
     <section>
-      <div className="px-[15px] mx-0 sm:mx-[9.6px] pt-[110px] pb-[192.44px] flex flex-col items-center">
+      <div className="px-[15px] mx-0 sm:mx-[9.6px] pt-[110px] pb-[140px] flex flex-col items-center">
         <div
           data-aos="fade-down"
           data-aos-delay="100"
@@ -44,7 +44,7 @@ function AboutBikes() {
         <div className="my-[37px] w-[80px] h-[4px] rounded-sm bg-[#EB601D]"></div>
         <div className="w-full">
           <iframe
-            className="w-full min-h-[250px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[709px]"
+            className="w-[90%] min-h-[250px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[709px] mx-auto"
             src="https://www.youtube.com/embed/aQ9-LFx8slw"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
